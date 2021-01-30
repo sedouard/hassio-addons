@@ -2,7 +2,7 @@ ARG BUILD_FROM
 FROM $BUILD_FROM
 
 ENV LANG C.UTF-8
-
+ENV CFLAGS -fcommon
 # Copy data for add-on
 COPY data/run.sh /
 
